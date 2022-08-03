@@ -3619,8 +3619,8 @@
       }
     },
     "test\\01-Fallback.t.sol": {
-      "lastModificationDate": 1659555247043,
-      "contentHash": "1be895d0ade0169b69ef9579090b67cc",
+      "lastModificationDate": 1659556502020,
+      "contentHash": "b0add710f389a2829a7ddb2470db3b02",
       "sourceName": "test\\01-Fallback.t.sol",
       "solcConfig": {
         "settings": {

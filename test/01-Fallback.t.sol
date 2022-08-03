@@ -24,6 +24,7 @@ contract BaseSetUp is Test {
 contract Attack is BaseSetUp {
 
     Fallback ethernautFallback;
+    address payable levelAddress;
 
     function setUp() public virtual override {
         BaseSetUp.setUp();
@@ -33,8 +34,8 @@ contract Attack is BaseSetUp {
         ethernaut.registerLevel(fallbackFactory);
 
         vm.prank(attacker);
-        address levelAddress = ethernaut.createLevelInstance(fallbackFactory);
-        ethernautFallback = Fallback(payable(levelAddress));
+        levelAddress = payable(ethernaut.createLevelInstance(fallbackFactory));
+        ethernautFallback = Fallback(levelAddress);
         console.log("Ethernaut Fallback Challenge!");
     }
 
@@ -53,6 +54,10 @@ contract Attack is BaseSetUp {
         // Drain wallet
         ethernautFallback.withdraw();
         assert(address(ethernautFallback).balance == 0);
+
+        // Submit Level
+        bool passedLevel = ethernaut.submitLevelInstance(levelAddress);
+        assert(passedLevel);
 
         vm.stopPrank();
     }
