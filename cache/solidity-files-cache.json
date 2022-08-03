@@ -3619,8 +3619,8 @@
       }
     },
     "test\\01-Fallback.t.sol": {
-      "lastModificationDate": 1659554282983,
-      "contentHash": "b6e90131495442864352ac29fffb4b5f",
+      "lastModificationDate": 1659555247043,
+      "contentHash": "1be895d0ade0169b69ef9579090b67cc",
       "sourceName": "test\\01-Fallback.t.sol",
       "solcConfig": {
         "settings": {
@@ -3669,6 +3669,60 @@
         },
         "BaseSetUp": {
           "0.8.15+commit.e14f2714.Windows.msvc": "01-Fallback.t.sol\\BaseSetUp.json"
+        }
+      }
+    },
+    "test\\02-Fallout.t.sol": {
+      "lastModificationDate": 1659556409648,
+      "contentHash": "e568d925de843b8a23253449f8c9ba54",
+      "sourceName": "test\\02-Fallout.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib\\forge-std\\src\\Script.sol",
+        "lib/forge-std/src/Test.sol",
+        "lib\\forge-std\\src\\Vm.sol",
+        "lib\\forge-std\\src\\console.sol",
+        "lib\\forge-std\\src\\console2.sol",
+        "lib/openzeppelin-contracts/contracts/utils/math/SafeMath.sol",
+        "lib/solmate/lib/ds-test/src/test.sol",
+        "lib/solmate/src/auth/Owned.sol",
+        "src\\02-Fallout\\Fallout.sol",
+        "src\\02-Fallout\\FalloutFactory.sol",
+        "src\\Ethernaut.sol",
+        "src\\Level.sol"
+      ],
+      "versionRequirement": "^0.8.13",
+      "artifacts": {
+        "Attack": {
+          "0.8.15+commit.e14f2714.Windows.msvc": "02-Fallout.t.sol\\Attack.json"
+        },
+        "BaseSetUp": {
+          "0.8.15+commit.e14f2714.Windows.msvc": "02-Fallout.t.sol\\BaseSetUp.json"
         }
       }
     }
