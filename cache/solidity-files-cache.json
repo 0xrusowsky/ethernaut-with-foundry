@@ -813,6 +813,47 @@
         }
       }
     },
+    "src\\03-CoinFlip\\Attacker.sol": {
+      "lastModificationDate": 1659558881497,
+      "contentHash": "af4b00898c34a3ad44f06bd702838ab6",
+      "sourceName": "src\\03-CoinFlip\\Attacker.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.13",
+      "artifacts": {
+        "Attacker": {
+          "0.8.15+commit.e14f2714.Windows.msvc": "Attacker.sol\\Attacker.json"
+        },
+        "ICoinFlip": {
+          "0.8.15+commit.e14f2714.Windows.msvc": "Attacker.sol\\ICoinFlip.json"
+        }
+      }
+    },
     "src\\03-CoinFlip\\CoinFlip.sol": {
       "lastModificationDate": 1659551288644,
       "contentHash": "ea7434a292f01faa06f29359c8711e5f",
@@ -3723,6 +3764,61 @@
         },
         "BaseSetUp": {
           "0.8.15+commit.e14f2714.Windows.msvc": "02-Fallout.t.sol\\BaseSetUp.json"
+        }
+      }
+    },
+    "test\\03-CoinFlip.t.sol": {
+      "lastModificationDate": 1659559479054,
+      "contentHash": "9f60d9be5837a75778f954dd196b16bc",
+      "sourceName": "test\\03-CoinFlip.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib\\forge-std\\src\\Script.sol",
+        "lib/forge-std/src/Test.sol",
+        "lib\\forge-std\\src\\Vm.sol",
+        "lib\\forge-std\\src\\console.sol",
+        "lib\\forge-std\\src\\console2.sol",
+        "lib/openzeppelin-contracts/contracts/utils/math/SafeMath.sol",
+        "lib/solmate/lib/ds-test/src/test.sol",
+        "lib/solmate/src/auth/Owned.sol",
+        "src\\03-CoinFlip\\Attacker.sol",
+        "src\\03-CoinFlip\\CoinFlip.sol",
+        "src\\03-CoinFlip\\CoinFlipFactory.sol",
+        "src\\Ethernaut.sol",
+        "src\\Level.sol"
+      ],
+      "versionRequirement": "^0.8.13",
+      "artifacts": {
+        "Attack": {
+          "0.8.15+commit.e14f2714.Windows.msvc": "03-CoinFlip.t.sol\\Attack.json"
+        },
+        "BaseSetUp": {
+          "0.8.15+commit.e14f2714.Windows.msvc": "03-CoinFlip.t.sol\\BaseSetUp.json"
         }
       }
     }
