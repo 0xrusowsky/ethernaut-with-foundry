@@ -3,8 +3,8 @@ pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
 import "src/Ethernaut.sol";
-import "src/03-CoinFlip/CoinFlipFactory.sol";
-import "src/03-CoinFlip/Attacker.sol";
+import "src/04-Telephone/TelephoneFactory.sol";
+import "src/04-Telephone/Attacker.sol";
 import 'openzeppelin-contracts/contracts/utils/math/SafeMath.sol';
 
 contract BaseSetUp is Test {
@@ -24,7 +24,7 @@ contract BaseSetUp is Test {
 
 contract Attack is BaseSetUp {
 
-    CoinFlip ethernautCoinFlip;
+    Telephone ethernautTelephone;
     Attacker attackerContract;
     address payable levelAddress;
 
@@ -32,35 +32,29 @@ contract Attack is BaseSetUp {
         BaseSetUp.setUp();
 
         // Initialize level
-        CoinFlipFactory coinFlipFactory = new CoinFlipFactory();
-        ethernaut.registerLevel(coinFlipFactory);
+        TelephoneFactory telephoneFactory = new TelephoneFactory();
+        ethernaut.registerLevel(telephoneFactory);
 
         vm.prank(attacker);
-        levelAddress = payable(ethernaut.createLevelInstance(coinFlipFactory));
-        ethernautCoinFlip = CoinFlip(levelAddress);
-        console.log("Ethernaut CoinFlip Challenge!");
+        levelAddress = payable(ethernaut.createLevelInstance(telephoneFactory));
+        ethernautTelephone = Telephone(levelAddress);
+        console.log("Ethernaut Telephone Challenge!");
     }
 
     function testAttack() public {
-        
-        vm.startPrank(attacker);
+       
+        // Initialize and use the Attacker contract to call changeOwner
+        attackerContract = new Attacker(address(ethernautTelephone));
 
-        assert(ethernautCoinFlip.consecutiveWins() == 0);
-        
-        // Initialize and use the Attacker contract to predict the outcome 10 times
-        attackerContract = new Attacker(address(ethernautCoinFlip));
+        vm.prank(attacker);
+        attackerContract.changeOwnerAttack();
 
-        for (uint i = 1; i<=10; i++) {
-            vm.roll(1234*(i));
-            attackerContract.flipAttack();
-        }
-        assert(ethernautCoinFlip.consecutiveWins() == 10);
+        assert(ethernautTelephone.owner() == attacker);
 
         // Submit Level
+        vm.prank(attacker);
         bool passedLevel = ethernaut.submitLevelInstance(levelAddress);
         assert(passedLevel);
-
-        vm.stopPrank();
     }
 }
 
