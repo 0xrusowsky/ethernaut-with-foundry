@@ -1,0 +1,216 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "initialize",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x6080604052348015600f57600080fd5b50606a80601d6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c80638129fc1c14602d575b600080fd5b603233ff5b00fea26469706673582212200106d087d710dee300e61f266ee4c73a8065824e84324fcd71043d4ade75f85364736f6c634300080f0033",
+    "sourceMap": "58:116:116:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c80638129fc1c14602d575b600080fd5b603233ff5b00fea26469706673582212200106d087d710dee300e61f266ee4c73a8065824e84324fcd71043d4ade75f85364736f6c634300080f0033",
+    "sourceMap": "58:116:116:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;91:81;;153:10;132:33;91:81;",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "initialize()": "8129fc1c"
+  },
+  "ast": {
+    "absolutePath": "src\\25-Motorbike\\MotorbikeAttacker.sol",
+    "id": 29188,
+    "exportedSymbols": {
+      "MotorbikeAttacker": [
+        29187
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:143:116",
+    "nodes": [
+      {
+        "id": 29174,
+        "nodeType": "PragmaDirective",
+        "src": "32:24:116",
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".13"
+        ]
+      },
+      {
+        "id": 29187,
+        "nodeType": "ContractDefinition",
+        "src": "58:116:116",
+        "nodes": [
+          {
+            "id": 29186,
+            "nodeType": "FunctionDefinition",
+            "src": "91:81:116",
+            "body": {
+              "id": 29185,
+              "nodeType": "Block",
+              "src": "122:50:116",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "expression": {
+                              "id": 29180,
+                              "name": "msg",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": -15,
+                              "src": "153:3:116",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_magic_message",
+                                "typeString": "msg"
+                              }
+                            },
+                            "id": 29181,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "sender",
+                            "nodeType": "MemberAccess",
+                            "src": "153:10:116",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          ],
+                          "id": 29179,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "145:8:116",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_address_payable_$",
+                            "typeString": "type(address payable)"
+                          },
+                          "typeName": {
+                            "id": 29178,
+                            "name": "address",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "145:8:116",
+                            "stateMutability": "payable",
+                            "typeDescriptions": {}
+                          }
+                        },
+                        "id": 29182,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "145:19:116",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      ],
+                      "id": 29177,
+                      "name": "selfdestruct",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": -21,
+                      "src": "132:12:116",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_selfdestruct_nonpayable$_t_address_payable_$returns$__$",
+                        "typeString": "function (address payable)"
+                      }
+                    },
+                    "id": 29183,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "132:33:116",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 29184,
+                  "nodeType": "ExpressionStatement",
+                  "src": "132:33:116"
+                }
+              ]
+            },
+            "functionSelector": "8129fc1c",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "initialize",
+            "nameLocation": "100:10:116",
+            "parameters": {
+              "id": 29175,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "110:2:116"
+            },
+            "returnParameters": {
+              "id": 29176,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "122:0:116"
+            },
+            "scope": 29187,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "MotorbikeAttacker",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          29187
+        ],
+        "name": "MotorbikeAttacker",
+        "nameLocation": "67:17:116",
+        "scope": 29188,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 116
+}
