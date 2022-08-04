@@ -814,8 +814,8 @@
       }
     },
     "src\\03-CoinFlip\\Attacker.sol": {
-      "lastModificationDate": 1659558881497,
-      "contentHash": "af4b00898c34a3ad44f06bd702838ab6",
+      "lastModificationDate": 1659595016187,
+      "contentHash": "1e4fecf838df3ce0b981f9847ccd54b5",
       "sourceName": "src\\03-CoinFlip\\Attacker.sol",
       "solcConfig": {
         "settings": {
@@ -938,8 +938,8 @@
       }
     },
     "src\\04-Telephone\\Attacker.sol": {
-      "lastModificationDate": 1659566636723,
-      "contentHash": "bf4ec0df77b4dbb876737eeb1c6e7679",
+      "lastModificationDate": 1659595077547,
+      "contentHash": "1f2e9c07d82b26650fb2d69e0722cde0",
       "sourceName": "src\\04-Telephone\\Attacker.sol",
       "solcConfig": {
         "settings": {
@@ -1221,6 +1221,44 @@
         }
       }
     },
+    "src\\07-Force\\Attacker.sol": {
+      "lastModificationDate": 1659597596619,
+      "contentHash": "5844b72bc4d481cb1ebffae660b8e427",
+      "sourceName": "src\\07-Force\\Attacker.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.13",
+      "artifacts": {
+        "Attacker": {
+          "0.8.15+commit.e14f2714.Windows.msvc": "Attacker.sol\\Attacker.json"
+        }
+      }
+    },
     "src\\07-Force\\Force.sol": {
       "lastModificationDate": 1659551288789,
       "contentHash": "fa32018039701f0d62849b0afbb2959f",
@@ -1260,8 +1298,8 @@
       }
     },
     "src\\07-Force\\ForceAttacker.sol": {
-      "lastModificationDate": 1659551288801,
-      "contentHash": "8485c0fe05b2a4b8510206f3973fd95c",
+      "lastModificationDate": 1659596241787,
+      "contentHash": "e2fbd86e669a016eebf392bb7332f1b3",
       "sourceName": "src\\07-Force\\ForceAttacker.sol",
       "solcConfig": {
         "settings": {
@@ -3727,8 +3765,8 @@
       }
     },
     "test\\03-CoinFlip.t.sol": {
-      "lastModificationDate": 1659567161516,
-      "contentHash": "9f60d9be5837a75778f954dd196b16bc",
+      "lastModificationDate": 1659594457715,
+      "contentHash": "c009d4bb3ef4ce5aa4181537736d2025",
       "sourceName": "test\\03-CoinFlip.t.sol",
       "solcConfig": {
         "settings": {
@@ -3782,8 +3820,8 @@
       }
     },
     "test\\04-Telephone.t.sol": {
-      "lastModificationDate": 1659567142232,
-      "contentHash": "f0644ea7691406e1ced8970881623944",
+      "lastModificationDate": 1659594459044,
+      "contentHash": "bf595ee26a2e156007b925ce43d0d427",
       "sourceName": "test\\04-Telephone.t.sol",
       "solcConfig": {
         "settings": {
@@ -3817,7 +3855,6 @@
         "lib\\forge-std\\src\\Vm.sol",
         "lib\\forge-std\\src\\console.sol",
         "lib\\forge-std\\src\\console2.sol",
-        "lib/openzeppelin-contracts/contracts/utils/math/SafeMath.sol",
         "lib/solmate/lib/ds-test/src/test.sol",
         "lib/solmate/src/auth/Owned.sol",
         "src\\04-Telephone\\Attacker.sol",
@@ -3837,8 +3874,8 @@
       }
     },
     "test\\05-Token.t.sol": {
-      "lastModificationDate": 1659569397921,
-      "contentHash": "00a6d2484ac76a2fba7a28826c559096",
+      "lastModificationDate": 1659594460073,
+      "contentHash": "0f719f36941ebcb24445502a8148d837",
       "sourceName": "test\\05-Token.t.sol",
       "solcConfig": {
         "settings": {
@@ -3872,7 +3909,6 @@
         "lib\\forge-std\\src\\Vm.sol",
         "lib\\forge-std\\src\\console.sol",
         "lib\\forge-std\\src\\console2.sol",
-        "lib/openzeppelin-contracts/contracts/utils/math/SafeMath.sol",
         "lib/solmate/lib/ds-test/src/test.sol",
         "lib/solmate/src/auth/Owned.sol",
         "src\\05-Token\\Token.sol",
@@ -3891,8 +3927,8 @@
       }
     },
     "test\\06-Delegation.t.sol": {
-      "lastModificationDate": 1659571647008,
-      "contentHash": "3086f717d182fec9b9be8558797d0329",
+      "lastModificationDate": 1659594455048,
+      "contentHash": "6d6039e381e564471769e0aa97aea7f8",
       "sourceName": "test\\06-Delegation.t.sol",
       "solcConfig": {
         "settings": {
@@ -3926,7 +3962,6 @@
         "lib\\forge-std\\src\\Vm.sol",
         "lib\\forge-std\\src\\console.sol",
         "lib\\forge-std\\src\\console2.sol",
-        "lib/openzeppelin-contracts/contracts/utils/math/SafeMath.sol",
         "lib/solmate/lib/ds-test/src/test.sol",
         "lib/solmate/src/auth/Owned.sol",
         "src\\06-Delegation\\Delegation.sol",
@@ -3941,6 +3976,60 @@
         },
         "BaseSetUp": {
           "0.8.15+commit.e14f2714.Windows.msvc": "06-Delegation.t.sol\\BaseSetUp.json"
+        }
+      }
+    },
+    "test\\07-Force.t.sol": {
+      "lastModificationDate": 1659597540775,
+      "contentHash": "dcf99317bb722b5d58fa1aad94483f8e",
+      "sourceName": "test\\07-Force.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib\\forge-std\\src\\Script.sol",
+        "lib/forge-std/src/Test.sol",
+        "lib\\forge-std\\src\\Vm.sol",
+        "lib\\forge-std\\src\\console.sol",
+        "lib\\forge-std\\src\\console2.sol",
+        "lib/solmate/lib/ds-test/src/test.sol",
+        "lib/solmate/src/auth/Owned.sol",
+        "src\\07-Force\\Attacker.sol",
+        "src\\07-Force\\Force.sol",
+        "src\\07-Force\\ForceFactory.sol",
+        "src\\Ethernaut.sol",
+        "src\\Level.sol"
+      ],
+      "versionRequirement": "^0.8.13",
+      "artifacts": {
+        "Attack": {
+          "0.8.15+commit.e14f2714.Windows.msvc": "07-Force.t.sol\\Attack.json"
+        },
+        "BaseSetUp": {
+          "0.8.15+commit.e14f2714.Windows.msvc": "07-Force.t.sol\\BaseSetUp.json"
         }
       }
     }

