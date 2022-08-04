@@ -4,7 +4,6 @@ pragma solidity ^0.8.13;
 import "forge-std/Test.sol";
 import "src/Ethernaut.sol";
 import "src/06-Delegation/DelegationFactory.sol";
-import 'openzeppelin-contracts/contracts/utils/math/SafeMath.sol';
 
 contract BaseSetUp is Test {
     Ethernaut ethernaut;
@@ -47,7 +46,7 @@ contract Attack is BaseSetUp {
         
         emit log_address(ethernautDelegation.owner());
         assert(ethernautDelegation.owner() == attacker);
-        
+
         // Submit Level
         vm.prank(attacker);
         bool passedLevel = ethernaut.submitLevelInstance(levelAddress);

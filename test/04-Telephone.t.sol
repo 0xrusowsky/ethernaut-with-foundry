@@ -5,7 +5,6 @@ import "forge-std/Test.sol";
 import "src/Ethernaut.sol";
 import "src/04-Telephone/TelephoneFactory.sol";
 import "src/04-Telephone/Attacker.sol";
-import 'openzeppelin-contracts/contracts/utils/math/SafeMath.sol';
 
 contract BaseSetUp is Test {
     Ethernaut ethernaut;

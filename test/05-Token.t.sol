@@ -4,7 +4,6 @@ pragma solidity ^0.8.13;
 import "forge-std/Test.sol";
 import "src/Ethernaut.sol";
 import "src/05-Token/TokenFactory.sol";
-import 'openzeppelin-contracts/contracts/utils/math/SafeMath.sol';
 
 contract BaseSetUp is Test {
     Ethernaut ethernaut;
