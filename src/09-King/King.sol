@@ -7,6 +7,8 @@ contract King {
     uint public prize;
     address payable public owner;
 
+    event ChangedKing(uint256 newPrize, address newKing);
+
     constructor() payable {
         owner = payable(msg.sender);  
         king = payable(msg.sender);
@@ -18,6 +20,7 @@ contract King {
         king.transfer(msg.value);
         king = payable(msg.sender);
         prize = msg.value;
+        emit ChangedKing(msg.value, msg.sender);
     }
 
     function _king() public view returns (address payable) {
