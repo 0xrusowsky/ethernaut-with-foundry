@@ -1,65 +1,89 @@
 {
   "abi": [
     {
-      "inputs": [
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
         {
           "internalType": "address",
-          "name": "_address",
+          "name": "",
           "type": "address"
         }
       ],
-      "stateMutability": "nonpayable",
-      "type": "constructor"
-    },
-    {
-      "stateMutability": "payable",
-      "type": "fallback"
+      "stateMutability": "view",
+      "type": "function"
     },
     {
       "inputs": [
         {
           "internalType": "uint256",
-          "name": "_amount",
+          "name": "_owner",
           "type": "uint256"
         }
       ],
-      "name": "withdraw",
+      "name": "setTime",
       "outputs": [],
       "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "timeZone1Library",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "timeZone2Library",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
       "type": "function"
     }
   ],
   "bytecode": {
-    "object": "0x608060405234801561001057600080fd5b506040516101d73803806101d783398101604081905261002f91610054565b600080546001600160a01b0319166001600160a01b0392909216919091179055610084565b60006020828403121561006657600080fd5b81516001600160a01b038116811461007d57600080fd5b9392505050565b610144806100936000396000f3fe60806040526004361061001e5760003560e01c80632e1a7d4d14610079575b600054604051632e1a7d4d60e01b81523460048201526001600160a01b0390911690632e1a7d4d90602401600060405180830381600087803b15801561006357600080fd5b505af1158015610077573d6000803e3d6000fd5b005b34801561008557600080fd5b506100776100943660046100f5565b600054604051632e1a7d4d60e01b8152600481018390526001600160a01b0390911690632e1a7d4d90602401600060405180830381600087803b1580156100da57600080fd5b505af11580156100ee573d6000803e3d6000fd5b5050505050565b60006020828403121561010757600080fd5b503591905056fea2646970667358221220dd5a9f3ee26b958ee8169ddb37b1f87aebf608ee07eae8eb7cb7f6e4399a5d1c64736f6c634300080f0033",
-    "sourceMap": "139:318:17:-:0;;;192:80;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;233:9;:31;;-1:-1:-1;;;;;;233:31:17;-1:-1:-1;;;;;233:31:17;;;;;;;;;;139:318;;14:290:23;84:6;137:2;125:9;116:7;112:23;108:32;105:52;;;153:1;150;143:12;105:52;179:16;;-1:-1:-1;;;;;224:31:23;;214:42;;204:70;;270:1;267;260:12;204:70;293:5;14:290;-1:-1:-1;;;14:290:23:o;:::-;139:318:17;;;;;;",
+    "object": "0x608060405234801561001057600080fd5b5061011a806100206000396000f3fe6080604052348015600f57600080fd5b506004361060465760003560e01c806327d6974f14604b5780633beb26c41460795780633dc794221460a85780638da5cb5b1460ba575b600080fd5b600154605d906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f35b60a6608436600460cc565b600280546001600160a01b0319166001600160a01b0392909216919091179055565b005b600054605d906001600160a01b031681565b600254605d906001600160a01b031681565b60006020828403121560dd57600080fd5b503591905056fea2646970667358221220838b91af58d52c4361a6774c06246b0ddf27d1ca603d7b33328905734b07b36064736f6c634300080f0033",
+    "sourceMap": "61:397:16:-:0;;;;;;;;;;;;;;;;;;;",
     "linkReferences": {}
   },
   "deployedBytecode": {
-    "object": "0x60806040526004361061001e5760003560e01c80632e1a7d4d14610079575b600054604051632e1a7d4d60e01b81523460048201526001600160a01b0390911690632e1a7d4d90602401600060405180830381600087803b15801561006357600080fd5b505af1158015610077573d6000803e3d6000fd5b005b34801561008557600080fd5b506100776100943660046100f5565b600054604051632e1a7d4d60e01b8152600481018390526001600160a01b0390911690632e1a7d4d90602401600060405180830381600087803b1580156100da57600080fd5b505af11580156100ee573d6000803e3d6000fd5b5050505050565b60006020828403121561010757600080fd5b503591905056fea2646970667358221220dd5a9f3ee26b958ee8169ddb37b1f87aebf608ee07eae8eb7cb7f6e4399a5d1c64736f6c634300080f0033",
-    "sourceMap": "139:318:17:-:0;;;;;;;;;;;;;;;;;;319:9;;:29;;-1:-1:-1;;;319:29:17;;338:9;319:29;;;160:25:23;-1:-1:-1;;;;;319:9:17;;;;:18;;133::23;;319:29:17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;364:88;;;;;;;;;;-1:-1:-1;364:88:17;;;;;:::i;:::-;417:9;;:27;;-1:-1:-1;;;417:27:17;;;;;160:25:23;;;-1:-1:-1;;;;;417:9:17;;;;:18;;133::23;;417:27:17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;364:88;:::o;196:180:23:-;255:6;308:2;296:9;287:7;283:23;279:32;276:52;;;324:1;321;314:12;276:52;-1:-1:-1;347:23:23;;196:180;-1:-1:-1;196:180:23:o",
+    "object": "0x6080604052348015600f57600080fd5b506004361060465760003560e01c806327d6974f14604b5780633beb26c41460795780633dc794221460a85780638da5cb5b1460ba575b600080fd5b600154605d906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f35b60a6608436600460cc565b600280546001600160a01b0319166001600160a01b0392909216919091179055565b005b600054605d906001600160a01b031681565b600254605d906001600160a01b031681565b60006020828403121560dd57600080fd5b503591905056fea2646970667358221220838b91af58d52c4361a6774c06246b0ddf27d1ca603d7b33328905734b07b36064736f6c634300080f0033",
+    "sourceMap": "61:397:16:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;207:31;;;;;-1:-1:-1;;;;;207:31:16;;;;;;-1:-1:-1;;;;;178:32:23;;;160:51;;148:2;133:18;207:31:16;;;;;;;364:91;;;;;;:::i;:::-;415:5;:32;;-1:-1:-1;;;;;;415:32:16;-1:-1:-1;;;;;415:32:16;;;;;;;;;;364:91;;;169:31;;;;;-1:-1:-1;;;;;169:31:16;;;245:20;;;;;-1:-1:-1;;;;;245:20:16;;;222:180:23;281:6;334:2;322:9;313:7;309:23;305:32;302:52;;;350:1;347;340:12;302:52;-1:-1:-1;373:23:23;;222:180;-1:-1:-1;222:180:23:o",
     "linkReferences": {}
   },
   "methodIdentifiers": {
-    "withdraw(uint256)": "2e1a7d4d"
+    "owner()": "8da5cb5b",
+    "setTime(uint256)": "3beb26c4",
+    "timeZone1Library()": "3dc79422",
+    "timeZone2Library()": "27d6974f"
   },
   "ast": {
-    "absolutePath": "src\\10-Reentrancy\\Attacker.sol",
-    "id": 21971,
+    "absolutePath": "src\\16-Preservation\\Attacker.sol",
+    "id": 21637,
     "exportedSymbols": {
       "Attacker": [
-        21970
-      ],
-      "IFallback": [
-        21931
+        21636
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "33:424:17",
+    "src": "33:425:16",
     "nodes": [
       {
-        "id": 21925,
+        "id": 21613,
         "nodeType": "PragmaDirective",
-        "src": "33:24:17",
+        "src": "33:24:16",
         "literals": [
           "solidity",
           "^",
@@ -68,145 +92,123 @@
         ]
       },
       {
-        "id": 21931,
+        "id": 21636,
         "nodeType": "ContractDefinition",
-        "src": "61:74:17",
+        "src": "61:397:16",
         "nodes": [
           {
-            "id": 21930,
-            "nodeType": "FunctionDefinition",
-            "src": "88:44:17",
-            "functionSelector": "2e1a7d4d",
-            "implemented": false,
-            "kind": "function",
-            "modifiers": [],
-            "name": "withdraw",
-            "nameLocation": "97:8:17",
-            "parameters": {
-              "id": 21928,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 21927,
-                  "mutability": "mutable",
-                  "name": "_amount",
-                  "nameLocation": "114:7:17",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 21930,
-                  "src": "106:15:17",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 21926,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "106:7:17",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "visibility": "internal"
-                }
-              ],
-              "src": "105:17:17"
-            },
-            "returnParameters": {
-              "id": 21929,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "131:0:17"
-            },
-            "scope": 21931,
-            "stateMutability": "nonpayable",
-            "virtual": false,
-            "visibility": "external"
-          }
-        ],
-        "abstract": false,
-        "baseContracts": [],
-        "canonicalName": "IFallback",
-        "contractDependencies": [],
-        "contractKind": "interface",
-        "fullyImplemented": false,
-        "linearizedBaseContracts": [
-          21931
-        ],
-        "name": "IFallback",
-        "nameLocation": "71:9:17",
-        "scope": 21971,
-        "usedErrors": []
-      },
-      {
-        "id": 21970,
-        "nodeType": "ContractDefinition",
-        "src": "139:318:17",
-        "nodes": [
-          {
-            "id": 21934,
+            "id": 21615,
             "nodeType": "VariableDeclaration",
-            "src": "164:19:17",
+            "src": "169:31:16",
             "constant": false,
+            "functionSelector": "3dc79422",
             "mutability": "mutable",
-            "name": "ifallback",
-            "nameLocation": "174:9:17",
-            "scope": 21970,
+            "name": "timeZone1Library",
+            "nameLocation": "184:16:16",
+            "scope": 21636,
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_IFallback_$21931",
-              "typeString": "contract IFallback"
+              "typeIdentifier": "t_address",
+              "typeString": "address"
             },
             "typeName": {
-              "id": 21933,
-              "nodeType": "UserDefinedTypeName",
-              "pathNode": {
-                "id": 21932,
-                "name": "IFallback",
-                "nodeType": "IdentifierPath",
-                "referencedDeclaration": 21931,
-                "src": "164:9:17"
-              },
-              "referencedDeclaration": 21931,
-              "src": "164:9:17",
+              "id": 21614,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "169:7:16",
+              "stateMutability": "nonpayable",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IFallback_$21931",
-                "typeString": "contract IFallback"
+                "typeIdentifier": "t_address",
+                "typeString": "address"
               }
             },
-            "visibility": "internal"
+            "visibility": "public"
           },
           {
-            "id": 21946,
+            "id": 21617,
+            "nodeType": "VariableDeclaration",
+            "src": "207:31:16",
+            "constant": false,
+            "functionSelector": "27d6974f",
+            "mutability": "mutable",
+            "name": "timeZone2Library",
+            "nameLocation": "222:16:16",
+            "scope": 21636,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 21616,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "207:7:16",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 21619,
+            "nodeType": "VariableDeclaration",
+            "src": "245:20:16",
+            "constant": false,
+            "functionSelector": "8da5cb5b",
+            "mutability": "mutable",
+            "name": "owner",
+            "nameLocation": "260:5:16",
+            "scope": 21636,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 21618,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "245:7:16",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 21635,
             "nodeType": "FunctionDefinition",
-            "src": "192:80:17",
+            "src": "364:91:16",
             "body": {
-              "id": 21945,
+              "id": 21634,
               "nodeType": "Block",
-              "src": "222:50:17",
+              "src": "404:51:16",
               "statements": [
                 {
                   "expression": {
-                    "id": 21943,
+                    "id": 21632,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 21939,
-                      "name": "ifallback",
+                      "id": 21624,
+                      "name": "owner",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 21934,
-                      "src": "233:9:17",
+                      "referencedDeclaration": 21619,
+                      "src": "415:5:16",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IFallback_$21931",
-                        "typeString": "contract IFallback"
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
                       }
                     },
                     "nodeType": "Assignment",
@@ -214,37 +216,89 @@
                     "rightHandSide": {
                       "arguments": [
                         {
-                          "id": 21941,
-                          "name": "_address",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 21936,
-                          "src": "255:8:17",
+                          "arguments": [
+                            {
+                              "id": 21629,
+                              "name": "_owner",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 21621,
+                              "src": "439:6:16",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            ],
+                            "id": 21628,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "431:7:16",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_uint160_$",
+                              "typeString": "type(uint160)"
+                            },
+                            "typeName": {
+                              "id": 21627,
+                              "name": "uint160",
+                              "nodeType": "ElementaryTypeName",
+                              "src": "431:7:16",
+                              "typeDescriptions": {}
+                            }
+                          },
+                          "id": 21630,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "431:15:16",
+                          "tryCall": false,
                           "typeDescriptions": {
-                            "typeIdentifier": "t_address",
-                            "typeString": "address"
+                            "typeIdentifier": "t_uint160",
+                            "typeString": "uint160"
                           }
                         }
                       ],
                       "expression": {
                         "argumentTypes": [
                           {
-                            "typeIdentifier": "t_address",
-                            "typeString": "address"
+                            "typeIdentifier": "t_uint160",
+                            "typeString": "uint160"
                           }
                         ],
-                        "id": 21940,
-                        "name": "IFallback",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 21931,
-                        "src": "245:9:17",
+                        "id": 21626,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "nodeType": "ElementaryTypeNameExpression",
+                        "src": "423:7:16",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_IFallback_$21931_$",
-                          "typeString": "type(contract IFallback)"
+                          "typeIdentifier": "t_type$_t_address_$",
+                          "typeString": "type(address)"
+                        },
+                        "typeName": {
+                          "id": 21625,
+                          "name": "address",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "423:7:16",
+                          "typeDescriptions": {}
                         }
                       },
-                      "id": 21942,
+                      "id": 21631,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -252,289 +306,44 @@
                       "lValueRequested": false,
                       "names": [],
                       "nodeType": "FunctionCall",
-                      "src": "245:19:17",
+                      "src": "423:24:16",
                       "tryCall": false,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IFallback_$21931",
-                        "typeString": "contract IFallback"
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
                       }
                     },
-                    "src": "233:31:17",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IFallback_$21931",
-                      "typeString": "contract IFallback"
-                    }
-                  },
-                  "id": 21944,
-                  "nodeType": "ExpressionStatement",
-                  "src": "233:31:17"
-                }
-              ]
-            },
-            "implemented": true,
-            "kind": "constructor",
-            "modifiers": [],
-            "name": "",
-            "nameLocation": "-1:-1:-1",
-            "parameters": {
-              "id": 21937,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 21936,
-                  "mutability": "mutable",
-                  "name": "_address",
-                  "nameLocation": "212:8:17",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 21946,
-                  "src": "204:16:17",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_address",
-                    "typeString": "address"
-                  },
-                  "typeName": {
-                    "id": 21935,
-                    "name": "address",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "204:7:17",
-                    "stateMutability": "nonpayable",
+                    "src": "415:32:16",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
                   },
-                  "visibility": "internal"
-                }
-              ],
-              "src": "203:18:17"
-            },
-            "returnParameters": {
-              "id": 21938,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "222:0:17"
-            },
-            "scope": 21970,
-            "stateMutability": "nonpayable",
-            "virtual": false,
-            "visibility": "public"
-          },
-          {
-            "id": 21957,
-            "nodeType": "FunctionDefinition",
-            "src": "280:76:17",
-            "body": {
-              "id": 21956,
-              "nodeType": "Block",
-              "src": "308:48:17",
-              "statements": [
-                {
-                  "expression": {
-                    "arguments": [
-                      {
-                        "expression": {
-                          "id": 21952,
-                          "name": "msg",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": -15,
-                          "src": "338:3:17",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_magic_message",
-                            "typeString": "msg"
-                          }
-                        },
-                        "id": 21953,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": false,
-                        "lValueRequested": false,
-                        "memberName": "value",
-                        "nodeType": "MemberAccess",
-                        "src": "338:9:17",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
-                        }
-                      }
-                    ],
-                    "expression": {
-                      "argumentTypes": [
-                        {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
-                        }
-                      ],
-                      "expression": {
-                        "id": 21949,
-                        "name": "ifallback",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 21934,
-                        "src": "319:9:17",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IFallback_$21931",
-                          "typeString": "contract IFallback"
-                        }
-                      },
-                      "id": 21951,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": false,
-                      "lValueRequested": false,
-                      "memberName": "withdraw",
-                      "nodeType": "MemberAccess",
-                      "referencedDeclaration": 21930,
-                      "src": "319:18:17",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$returns$__$",
-                        "typeString": "function (uint256) external"
-                      }
-                    },
-                    "id": 21954,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "kind": "functionCall",
-                    "lValueRequested": false,
-                    "names": [],
-                    "nodeType": "FunctionCall",
-                    "src": "319:29:17",
-                    "tryCall": false,
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$__$",
-                      "typeString": "tuple()"
-                    }
-                  },
-                  "id": 21955,
+                  "id": 21633,
                   "nodeType": "ExpressionStatement",
-                  "src": "319:29:17"
+                  "src": "415:32:16"
                 }
               ]
             },
-            "implemented": true,
-            "kind": "fallback",
-            "modifiers": [],
-            "name": "",
-            "nameLocation": "-1:-1:-1",
-            "parameters": {
-              "id": 21947,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "288:2:17"
-            },
-            "returnParameters": {
-              "id": 21948,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "308:0:17"
-            },
-            "scope": 21970,
-            "stateMutability": "payable",
-            "virtual": false,
-            "visibility": "external"
-          },
-          {
-            "id": 21969,
-            "nodeType": "FunctionDefinition",
-            "src": "364:88:17",
-            "body": {
-              "id": 21968,
-              "nodeType": "Block",
-              "src": "406:46:17",
-              "statements": [
-                {
-                  "expression": {
-                    "arguments": [
-                      {
-                        "id": 21965,
-                        "name": "_amount",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 21959,
-                        "src": "436:7:17",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
-                        }
-                      }
-                    ],
-                    "expression": {
-                      "argumentTypes": [
-                        {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
-                        }
-                      ],
-                      "expression": {
-                        "id": 21962,
-                        "name": "ifallback",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 21934,
-                        "src": "417:9:17",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IFallback_$21931",
-                          "typeString": "contract IFallback"
-                        }
-                      },
-                      "id": 21964,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": false,
-                      "lValueRequested": false,
-                      "memberName": "withdraw",
-                      "nodeType": "MemberAccess",
-                      "referencedDeclaration": 21930,
-                      "src": "417:18:17",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$returns$__$",
-                        "typeString": "function (uint256) external"
-                      }
-                    },
-                    "id": 21966,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "kind": "functionCall",
-                    "lValueRequested": false,
-                    "names": [],
-                    "nodeType": "FunctionCall",
-                    "src": "417:27:17",
-                    "tryCall": false,
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$__$",
-                      "typeString": "tuple()"
-                    }
-                  },
-                  "id": 21967,
-                  "nodeType": "ExpressionStatement",
-                  "src": "417:27:17"
-                }
-              ]
-            },
-            "functionSelector": "2e1a7d4d",
+            "functionSelector": "3beb26c4",
             "implemented": true,
             "kind": "function",
             "modifiers": [],
-            "name": "withdraw",
-            "nameLocation": "373:8:17",
+            "name": "setTime",
+            "nameLocation": "373:7:16",
             "parameters": {
-              "id": 21960,
+              "id": 21622,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 21959,
+                  "id": 21621,
                   "mutability": "mutable",
-                  "name": "_amount",
-                  "nameLocation": "390:7:17",
+                  "name": "_owner",
+                  "nameLocation": "389:6:16",
                   "nodeType": "VariableDeclaration",
-                  "scope": 21969,
-                  "src": "382:15:17",
+                  "scope": 21635,
+                  "src": "381:14:16",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -542,10 +351,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 21958,
+                    "id": 21620,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "382:7:17",
+                    "src": "381:7:16",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -554,15 +363,15 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "381:17:17"
+              "src": "380:16:16"
             },
             "returnParameters": {
-              "id": 21961,
+              "id": 21623,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "406:0:17"
+              "src": "404:0:16"
             },
-            "scope": 21970,
+            "scope": 21636,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
@@ -575,15 +384,15 @@
         "contractKind": "contract",
         "fullyImplemented": true,
         "linearizedBaseContracts": [
-          21970
+          21636
         ],
         "name": "Attacker",
-        "nameLocation": "148:8:17",
-        "scope": 21971,
+        "nameLocation": "70:8:16",
+        "scope": 21637,
         "usedErrors": []
       }
     ],
     "license": "MIT"
   },
-  "id": 17
+  "id": 16
 }
